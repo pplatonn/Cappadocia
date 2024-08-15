@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #E2AB3F;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto_light';
+    src: url(../fonts/RobotoCondensed-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto_italic';
+    src: url(../fonts/RobotoCondensed-LightItalic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Balqis';
+    src: url(../fonts/Balqis.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+
+.landing_page {
+    background-image: url(../img/bg_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header menu */
+
+.menu_list {
+    width: 357px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.landing_menu {
+    padding-top: 72px;
+    display: flex;
+}
+
+.landing_menu_item,
+.list_link {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.list_link:hover {
+    text-decoration: underline;
+}
+
+.menu_phone {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.landing_page_text>h1 {
+    padding-top: 152px;
+    font-family: 'Balqis', sans-serif;
+    font-size: 250px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.landing_page_text>span {
+    font-size: 56px;
+    font-family: 'Roboto_italic', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* fairy tail section */
+
+.fairy_tail_text {
+    width: 389px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fairy_tail_text>h1 {
+    padding-top: 152px;
+    font-family: 'Balqis', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    display: flex;
+    color: var(--yellow);
+}
+
+.fairy_tail_text>span {
+    font-size: 24px;
+    font-family: 'Roboto_italic', sans-serif;
+    font-weight: 500;
+    display: flex;
+    margin-left: auto;
+}
+
+.fairy_tail_desc p {
+    font-family: 'Roboto_light', sans-serif;
+    font-size: 18px;
+}
+
+.fairy_tail_desc {
+    padding-left: 55px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider_1_cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* slider 1 */
+
+.slider {
+    width: 2200px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_track {
+    display: flex;
+    width: calc(960px * 6);
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    width: 960px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    transition: transform 1%;
+}
+
+/* autoplay animation */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-960px * 3));
+    }
+}
+
+/* slider 2 */
+
+.slider_2_cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_2 {
+    width: 750px;
+    position: relative;
+    overflow: hidden;
+    height: 1095px;
+    padding-top: 245px
+}
+
+.slider_track_2 {
+    display: flex;
+    width: calc(960px * 6);
+    animation: scroll_2 40s linear infinite;
+}
+
+.slide_2 {
+    padding: 10px;
+    width: 960px;
+    height: 1095px;
+    display: flex;
+    align-items: center;
+}
+
+.slide_2 img {
+    width: 100%;
+    transition: transform 1%;
+}
+
+@keyframes scroll_2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-960px *3));
+    }
+}
+
+.our_trip_text {
+    width: 389px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px
+}
+
+.our_trip_text>h1 {
+    padding-top: 152px;
+    font-family: 'Balqis', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    display: flex;
+    color: var(--yellow);
+}
+
+
+
+.our_trip_text>span {
+    font-size: 24px;
+    font-family: 'Roboto_italic', sans-serif;
+    font-weight: 500;
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 90px
+}
+
+.our_trip_text {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our_trip_desc p {
+    font-family: 'Roboto_light', sans-serif;
+    font-size: 18px;
+}
+
+.our_trip_desc p:nth-child(2n + 1) {
+    font-weight: 800;
+}
+
+.our_trip_desc {
+    display: flex;
+    justify-content: space-between;
+    height: 720px;
+    flex-direction: column;
+}
+
+.our_trip_desc button {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Roboto_light", sans-serif;
+    width: 280px;
+    height: 50px;
+    border: 1px solid var(--yellow);
+    text-align: center;
+    transition: .2s linear;
+}
+
+.our_trip_desc button:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* hotel sultan section */
+
+
+.hotel_sultan {
+    margin-top: 210px;
+}
+
+.hotel_sultan_container {
+    display: flex;
+}
+
+.hotel_sultan_text {
+    margin-bottom: 100px;
+}
+
+.hotel_sultan_text>h1 {
+    font-family: 'Balqis', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    display: flex;
+    color: var(--yellow);
+    height: 100px;
+}
+
+.hotel_sultan_text>span {
+    margin-left: 120px;
+    font-size: 24px;
+    font-family: 'Roboto_italic', sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+
+.hotel_sultan_desc p {
+    font-size: 18px;
+    font-family: 'Roboto_light', serif;
+}
+
+.hotel_sultan_desc {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    margin-left: 99px
+}
+
+.hotel_sultan_container>img {
+    width: 500px;
+    height: 700px;
+}
+
+.hotel_sultan_photos img {
+    width: 280px;
+    height: 150px;
+}
+
+.hotel_sultan_photos {
+    width: 599px;
+    align-items: end;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+}
+
+.hotel_sultan_desc_text {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-between;
+}
+
+/* pricing section */
+
+.price {
+    margin-top: 200px;
+}
+
+.price_header>h1 {
+    font-weight: 400;
+    height: 100px;
+    font-size: 96px;
+    font-family: 'Balqis', sans-serif;
+    color: var(--yellow);
+}
+
+.price_header>span {
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    font-family: 'Roboto_italic', sans-serif;
+}
+
+.price_header {
+    width: 295px;
+}
+
+.price_included p,
+.price_excluded p {
+    font-size: 18px;
+    font-family: 'Roboto_light', serif;
+}
+
+.price_text {
+    margin-top: 100px;
+    display: flex;
+}
+
+.price_included {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    width: 30vw;
+    margin-right: 6vw;
+}
+
+.price_excluded {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.price_included p b,
+.price_excluded p b {
+    font-size: 24px;
+}
+
+.price .container img {
+    position: relative;
+}
+
+#big_balloon {
+    left: 50vw;
+    bottom: 43vh;
+}
+
+#mini_balloon_1 {
+    left: 52vw;
+    bottom: 46vh;
+}
+
+#mini_balloon_2 {
+    left: 53vw;
+    bottom: 32vh;
+}
+
+/* payment section */
+
+.payment {
+    margin-bottom: 200px;
+}
+
+.payment_date_text>h1 {
+    font-weight: 400;
+    height: 100px;
+    font-size: 96px;
+    font-family: 'Balqis', sans-serif;
+    color: var(--yellow);
+}
+
+.payment_date_text>span {
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    font-family: 'Roboto_italic', sans-serif;
+}
+
+.payment_price_text>h1 {
+    font-weight: 400;
+    height: 100px;
+    font-size: 96px;
+    font-family: 'Balqis', sans-serif;
+    color: var(--yellow);
+}
+
+.payment_price_text>span {
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    font-family: 'Roboto_italic', sans-serif;
+}
+
+.payment_date_text {
+    width: 24vw;
+}
+
+.payment_price_text {
+    margin-bottom: 100px;
+    width: 16vw;
+    margin-left: auto;
+}
+
+.payment>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* payment form */
+
+form {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding-left: 31px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--yellow);
+}
+
+input::placeholder {
+    color: black;
+    font-size: 18px;
+    font-family: "Roboto_light", sans-serif;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--yellow);
+    color: black;
+    font-family: "Roboto_light", sans-serif;
+    padding: 0;
+    margin: 20px auto 0;
+    width: 20vw;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: .2s linear;
+}
+
+#submit:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* footer section  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background-image: url(../img/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer_balloon {
+    position: absolute;
+    height: 639px;
+    width: 356px;
+    padding-top: 96px;
+}
+
+.footer_menu {
+    position: absolute;
+    left: 58px;
+    top: 276px;
+
+    font-family: 'Roboto_light', sans-serif;
+    font-size: 18px;
+}
+
+.footer_menu_item {
+    display: flex;
+    align-items: center;
+}
+
+.footer_menu img {
+    padding-right: 10px;
+}
+
+.footer_icons {
+    position: absolute;
+    width: 120px;
+    left: 114px;
+    top: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer > .container> nav > h1 {
+    padding-top: 260px;
+    font-family: 'Balqis', sans-serif;
+    font-size: 86px;
+    font-weight: 300;
+    width: 590px;
+    margin-left: auto;
+}
